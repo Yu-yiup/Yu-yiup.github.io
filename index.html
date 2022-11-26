@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#fram{
+				width: 466px;
+				height: 276px;
+				background-image: url(img/plowland.jpg);
+				position: absolute;
+			}
+			#f{
+				width: 440px;
+				height: 40px;
+				position: absolute;
+				left: 10px;
+				bottom: 8px;
+				padding-bottom: 8px;
+			}
+			#m{
+				position: absolute;
+				top: 75px;
+				left: 180px;
+			}
+			#f img{
+				margin-left: 20px;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js" ></script>
+		<script>
+			$(document).ready(function(){
+				$("#02").click(function(){
+					$("#m").html("<img src='img/seed.png'>");
+				})
+				$("#03").click(function(){
+					$("#m").html("<img src='img/strawberry.jpg'>");
+				})
+				$("#04").click(function(){
+					$("#m").html("<img src='img/grow.png'>");
+				})
+				$("#05").click(function(){
+					$("#m").html("<img src='img/bloom.png'>");
+				})
+				$("#06").click(function(){
+					$("#m").html("<img src='img/fruit.png'>");
+				})
+				
+			})
+		</script>
+	</head>
+	<body>
+		<div id="fram">
+			<div id="m">
+				<img src="img/seed.png" >
+			</div>
+			<div id="f">
+				<img src="img/btn_seed.png" id="02" >
+				<img src="img/btn_harvest.png" id="03">
+				<img src="img/btn_grow.png" id="04">
+				<img src="img/btn_bloom.png" id="05">
+				<img src="img/btn_fruit.png" id="06">
+			</div>
+		</div>
+	</body>
+</html>
